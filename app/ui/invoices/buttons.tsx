@@ -14,7 +14,35 @@ export function CreateInvoice() {
   );
 }
 
+// type Address = {
+//   street: string;
+//   number: string
+// }
+
+// type UpdateInvoiceProps = {
+//   id: string;
+//   name: 'test' | 'hello';
+//   address: Address
+// }
+
+// const myInput:UpdateInvoiceProps = {
+//   id: '1234',
+//   name: 'test',
+//   address: {
+//     street: 'teststraat',
+//     number: '123'
+//   }
+// }
+
+// UpdateInvoice(myInput)
+
+
+// export function UpdateInvoice({id, name}: UpdateInvoiceProps) {
 export function UpdateInvoice({ id }: { id: string }) {
+
+// console.log(id)
+// console.log(name)
+
   return (
     <Link
       href={`/dashboard/invoices/${id}/edit`}
